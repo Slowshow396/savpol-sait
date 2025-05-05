@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savpol — Фармацевтическая компания</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .marquee {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background: rgba(255,255,255,0.95);
+      color: #1e3a8a;
+      font-weight: 600;
+      padding: 10px 0;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    }
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 20s linear infinite;
+    }
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    section { scroll-margin-top: 100px; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-white to-blue-50 text-gray-800">
+
+  <header class="bg-white/90 backdrop-blur-md fixed top-0 w-full z-50 rounded-b-3xl shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#home" class="text-3xl font-extrabold text-blue-900 hover:text-blue-600 transition">Savpol</a>
+      <nav class="space-x-6 text-lg">
+        <a href="#about" class="hover:text-blue-600">О нас</a>
+        <a href="#mission" class="hover:text-blue-600">Миссия</a>
+        <a href="#products" class="hover:text-blue-600">Продукция</a>
+        <a href="#research" class="hover:text-blue-600">Наука</a>
+        <a href="#contacts" class="hover:text-blue-600">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="pt-40 pb-32 bg-gradient-to-r from-blue-400 to-blue-700 text-white text-center rounded-b-3xl">
+    <div class="container mx-auto px-6">
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4">Savpol</h1>
+      <p class="text-xl md:text-2xl max-w-2xl mx-auto">Фармацевтические технологии будущего — уже сегодня</p>
+      <div class="mt-8">
+        <a href="#about" class="inline-block bg-white text-blue-800 font-bold px-8 py-3 rounded-full shadow hover:bg-blue-100 transition">Подробнее о нас</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-24 bg-white rounded-3xl shadow-inner mx-4 mt-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-blue-900 mb-6">О компании</h2>
+      <p class="text-lg max-w-3xl">Savpol — это команда специалистов, создающих инновационные и доступные фармацевтические продукты. Мы гордимся тем, что ежедневно заботимся о здоровье миллионов людей. Современные лаборатории, международные стандарты и контроль качества на каждом этапе производства — наша визитная карточка.</p>
+    </div>
+  </section>
+
+  <section id="mission" class="py-24 bg-gradient-to-r from-blue-50 via-white to-blue-100 rounded-3xl mx-4 mt-12 shadow-inner">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-blue-900 mb-6">Наша миссия</h2>
+      <ul class="list-disc pl-5 space-y-3 text-lg max-w-2xl">
+        <li>Создание эффективных и безопасных препаратов для каждого.</li>
+        <li>Внедрение современных научных разработок в реальную практику.</li>
+        <li>Снижение стоимости качественного лечения.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="products" class="py-24 bg-white rounded-3xl shadow-inner mx-4 mt-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-blue-900 mb-6">Наша продукция</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-blue-50 p-6 rounded-2xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Savimun</h3>
+          <p>Иммуностимулирующий комплекс на растительной основе.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-2xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Savpain</h3>
+          <p>Быстрое и безопасное средство от боли.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-2xl shadow">
+          <h3 class="text-xl font-semibold mb-2">Savvit</h3>
+          <p>Витаминные комплексы для всех возрастов.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="py-24 bg-gradient-to-r from-white via-blue-50 to-white rounded-3xl mx-4 mt-12 shadow-inner">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-blue-900 mb-6">Научные исследования</h2>
+      <p class="text-lg max-w-3xl">Мы сотрудничаем с ведущими университетами и лабораториями мира. Каждое наше открытие — это шаг к более здоровому обществу. Мы внедряем искусственный интеллект и биотехнологии для ускорения разработки препаратов.</p>
+    </div>
+  </section>
+
+  <section id="contacts" class="py-24 bg-white rounded-3xl shadow-inner mx-4 mt-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-blue-900 mb-6">Контакты</h2>
+      <p class="mb-3 text-lg"><strong>Адрес:</strong> г. Владимир, ул. Чайковского, 12</p>
+      <p class="mb-3 text-lg"><strong>Телефон:</strong> +7 (999) 123-45-67</p>
+      <p class="mb-6 text-lg"><strong>Email:</strong> info@savpol.ru</p>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f63f71c5aa450b2ad8e7fd30e7615f63685d4c6dbb086bdb02d67d9fd85e4d8&amp;source=constructor" width="100%" height="300" frameborder="0" class="rounded-xl shadow-md"></iframe>
+    </div>
+  </section>
+
+  <footer class="bg-blue-900 text-white py-8 text-center mt-24 rounded-t-3xl">
+    <p class="text-lg">&copy; 2025 Savpol. Все права защищены.</p>
+  </footer>
+
+  <div class="marquee">
+    <span>Savpol — инновации, забота, здоровье • Современные препараты • Доверие врачей и пациентов • Savpol — фармацевтика будущего • </span>
+  </div>
+
+</body>
+</html>
